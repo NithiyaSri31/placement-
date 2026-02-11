@@ -262,9 +262,161 @@ public class Main
 	https://onlinegdb.com./RPzPB5gnJR
 
 
+////////ARRAY COPILE TIME INPUT
+
+
+	import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    Scanner sc = new  Scanner(System.in);
+	    int a []= {1,2,3,4,5};
+	    for (int x:a){
+	        System.out.print(x + " ");
+	    }
+	    
+	}
+}
+
+
+///////////////////// RUNTIME INPUT ARRAY& sum of the values
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    Scanner sc = new  Scanner(System.in);
+	    int size = sc. nextInt();
+	    int arr[] = new int [size];
+	    
+	    for (int i=0;i<size; i++){
+	        arr[i]= sc.nextInt();
+	        
+	    
+	}
+	          int sum=0;
+	 for (int i=0;i<size; i++){
+	     sum= sum + arr[i]
+	     System.out.println(sum);
+	
+}
+	    
+	}
+}
+
+
+
+//////////SUM ODD EVEN SEPERATELY
+
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    Scanner sc = new  Scanner(System.in);
+	    int size = sc. nextInt();
+	    int arr[] = new int [size];
+	    
+	    for (int i=0;i<size; i++){
+	        arr[i]= sc.nextInt();
+	        
+	    
+	}        int sum =0;
+	          int oddsum=0;
+	          int evensum =0;
+	          
+	 for (int i=0;i<size; i++){
+	     if (arr[i] %2==0){
+	         evensum=evensum+arr[i];
+	 }
+	 else{
+	     oddsum=oddsum=arr[i];
+	 }
+	     sum= sum + arr[i];
+	     System.out.println(evensum + ""+oddsum);
+	
+}
+	    
+	}
+}
 
 
 
 
 
 
+
+
+\\\\\\\\\\\\\  MINIMUM
+	import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    Scanner sc = new  Scanner(System.in);
+	    int size = sc. nextInt();
+	    int arr[] = new int [size];
+	    
+	    for (int i=0;i<size; i++){
+	        arr[i]= sc.nextInt();
+	        
+	    
+	}      
+	
+	int min = arr[0];
+	for (int i=1; i>size; i++){
+	    if(arr[i]> min){
+	        min=arr[i];
+	        
+	    }
+	}
+	
+	
+	 System.out.println(min);
+	}
+}
+
+
+
+\\\\\\\\\\\\\\\SECOND MAX
+
+	import java.util.Scanner;
+public class Main
+{
+    
+	public static void main(String[] args) {
+	    
+	    Scanner sc = new  Scanner(System.in);
+	    int size = sc. nextInt();
+	    int arr[] = new int [size];
+	    
+	    for (int i=0;i<size; i++){
+	        arr[i]= sc.nextInt();
+	        
+	    
+	}      
+	
+	int firstmax = arr[0];
+	for (int i=0; i>size; i++){
+	    if(arr[i]>firstmax){
+	        firstmax=arr[i];
+	        
+	    }
+	}
+	int  secondmax = arr[0];
+	for (int i=0; i>size; i++){
+	    if(arr[i]> secondmax&&arr[i]<firstmax ){
+	        secondmax=arr[i];
+	        
+	
+	 System.out.println(secondmax);
+	}
+}
+}
+}
+
+    
