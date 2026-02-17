@@ -419,4 +419,189 @@ public class Main
 }
 }
 
+
+
+///////////////////////////////////
+import java.util. *;
+
+ public class main {
+     public static boolean prime(int a){
+         int count =0;
+         for(int i=1; i<=a;i++){
+             if( a%i==0){
+                 count++;
+             }
+         }
+           if(count ==2){
+               return true;
+           }
+           
+             else{
+                 return false;
+             }
+     }
+     
+     
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+         int num = sc.nextInt();
+         int num1 = sc.nextInt();
+         
+        System.out.println(prime(num));
+          System.out.println(prime(num1));
+    }
+}
+
+
+
+
+
+
+//////////////////////////  METHODS //////////////
+
+
+set of code for reuseablity;
+
+types:  
+
+predefined methods =  max(), min(), println(), nextInt()
+userdefined methods  
+
+	4 types
+	with argument with return= (10, 20)
+	with argument without return = prinln
+	without argument with return = length(), nextInt()
+	without  argument without return=   
+	
+	
+
+	define/ call
+
+	 public/ private  = keyword,
+	static / non-static= use object
+	return: int ,float / non return: void --------- return single variable
+
+	method name ()
+
+	public static int sum(){
+}   ---------------- method defenition
+
+
+
+	public static int sum(); ------------ method declarartion
+
+	
+     sum();--------- method calling
+
+	 sum(10,20);-------arguments
+
+
+	public static int sum( int a, int b)------ parameter
+
+
+	
+	
+
+
+	///////////////// WITH ARGUMENT WITH RETURN ////////////
+
+
+	import java.util. *;
+
+ public class main {
+     public static boolean prime(int a){
+         int count =0;
+         for(int i=1; i<=a;i++){
+             if( a%i==0){
+                 count++;
+             }
+         }
+           if(count ==2){
+               return true;
+           }
+           
+             else{
+                 return false;
+             }
+     }
+     
+     
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+         int num = sc.nextInt();
+         int num1 = sc.nextInt();
+         
+        System.out.println(prime(num));
+          System.out.println(prime(num1));
+    }
+}
+
+
+
+OUTPUT
+
+	23
+	23
+
+	true
+true
+
+
+
+\\\\\\\\\\\\\\\\\\\\  WITH ARGUMENT WITHOUT RETURN (Non static) |||||||||||||||||
+	
+	import java.util. *;
+
+ public class main {
+     public void  prime(int a){
+         int count =0;
+         for(int i=1; i<=a;i++){
+             if( a%i==0){
+                 count++;
+             }
+         }
+           if(count ==2){
+              System.out.println(true) ;
+           }
+           
+             else{
+                System.out.println(false) ;
+               
+             }
+     }
+     
+     
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+         int num = sc.nextInt();
+         int num1 = sc.nextInt();
+          main m= new main(); 
+            m.prime(num);
+            m.prime(num1);
+    }
+}
+
+
+OUTPUT
+	23
+12
+
+	true
+false
+
+
+
+
+	 https: //onlinegdb.com/jx7KLNcpZ
+
+ https: //onlinegdb.com/VQaIeMKps
+
+
+
+
+
+
+	
+	
+
     
