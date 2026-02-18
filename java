@@ -714,7 +714,167 @@ public class Main{
         s.display();
     }
  }
+
+
+
+	 ////////////////////////////////////////////////   LINKED LIST USING SWICH CASE  //////////////
+	https://www.onlinegdb.com/vZGIerloL
+
+
+
+
+
+	 ////////////////LINKED LIST USING SWICH CASE////////////////
+
+	 void deletelast(){
+    if(head==null){
+        System.out.println("No elemnt to delete");
+        return;
+    }
+    
+     Node temp=head;
+     while(temp.next!= tail){
+         temp= temp.next;
+         
+     }
      
+     
+     tail = temp;
+     tail.next= null;
+     
+}
+
+
+void dispaly(){
+    Node temp = head;
+    while(temp!= null){
+        
+    }
+}
+
+	 htttps://onlinegdb.com/KASK-Htlm
+
+
+
+
+
+
+
+
+	 /////////////// DELETE AT BEGINING//////////////////
+	 import java.util.*;
+
+class Node{
+  int data;
+  Node next;
+  
+  Node(int a){
+    data=a;
+    next=null;
+  }
+}
+class singlylinkedlist{
+  Node head=null;
+  Node tail=null;
+  int size=0;
+  
+  void add(int data){
+    size++;
+    Node newnode=new Node(data);
+    if(head==null){
+      head=tail=newnode;
+    }
+    else{
+       tail.next=newnode;
+       tail=newnode;
+    }
+    
+  }
+  void addatbeg(int data){
+    Node newnode=new Node(data);
+    size++;
+    if(head==null){
+      head=tail=newnode;
+    }
+    else{
+      newnode.next=head;
+       head=newnode;
+    }
+    
+  }
+  
+  void addatpos(int data,int pos){
+  if(pos<=0||pos>size+1){
+  System.out.println("enter a valid one");
+  return;
+  }
+  if(pos==1){
+    addatbeg(data);
+    return;
+  }
+  if(pos==size+1){
+    add(data);
+    return;
+  }
+  Node newnode=new Node(data);
+  size++;
+  if(head==null){
+    head=tail=newnode;
+  }
+  else{
+    Node temp=head;
+    for(int i=1;i<pos-1;i++){
+      temp=temp.next;
+    }
+   newnode.next=temp.next;
+   temp.next=newnode;
+  }
+    
+  }
+  
+   void deleteatbeg(){
+       if(head==null){
+           System.out.println("NO element to delete");
+           return;
+       }
+         head= head.next;
+   }
+  void display(){
+    Node temp=head;
+    while(temp!=null){
+      System.out.print(temp.data+" ");
+      temp=temp.next;
+    }
+	  
+    System.out.println();
+  }
+}
+
+public class Main {
+    public static void main(String[] args) {
+      singlylinkedlist s =new singlylinkedlist();
+      s.add(100);
+      s.add(200);
+      s.add(300);
+      s.add(400);
+      s.display();
+      s.deleteatbeg();
+      s.display();
+       s.deleteatbeg();
+      s.display();
+    }
+}
+
+
+
+
+
+
+
+
+https:// onlinegdb.com/Ntju9Nt5p\\\\\\\\\\\\\\\\\\\\\ over all deletion
+https:// onlinegdb.com/Ntju9Nt5p
+	 
 
 
 
