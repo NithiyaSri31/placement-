@@ -569,35 +569,152 @@ true
                
              }
      }
-     
-     
-    public static void main(String[] args) {
-        Scanner sc = new Scanner (System.in);
-         int num = sc.nextInt();
-         int num1 = sc.nextInt();
-          main m= new main(); 
-            m.prime(num);
-            m.prime(num1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 /////////////////////////////////////////////////// DATA STRUCTUR ///// LINKED LIST\\\\\\\\\\\\\\\\\\
+
+	 class Node{
+     int data;
+      Node next;
+}
+
+public class Main{
+    public static void main (String[]args){
+        Node n1 = new Node();
+         n1.data = 34;
+         Node n2 = new Node();
+         n2.data = 67;
+         n1.next= n2;
+         Node n3 = new Node();
+         n3.data = 90;
+         n2.next= n3;
+         System.out.println(n1.data+" "+ n1.next.data+" "+ n1.next.next.data);
+          System.out.println(n1.data+" "+ n2.data+" "+ n3.data);
+         
     }
 }
 
 
-OUTPUT
-	23
-12
 
-	true
-false
-
-
-
-
-	 https: //onlinegdb.com/jx7KLNcpZ
-
- https: //onlinegdb.com/VQaIeMKps
+	 //////////////////////  SINGLY LINKED LIST   AT BEGIN ////////////////////////////
+	 
+     
+     //////////////////////  SINGLY LINKED LIST   AT END ////////////////////////////
+    
 
 
 
+//////////////////////  SINGLY LINKED LIST   AT POSITION //////////////////////
+	 class Node{
+     int data;
+      Node next;
+      Node(int d){
+          data= d;
+          next=null;
+      }
+}
+
+ class singlylist {
+    Node head = null;
+    Node  tail= null;
+    int size=0;
+    void add(int data){
+        Node newnode = new Node(data);
+        if(head ==null){
+            head= tail=newnode;
+            
+        }
+        else{
+            tail.next= newnode;
+            tail= newnode;
+            
+        }
+    }
+    
+    void addatbeg(int data){
+        Node newnode= new Node(data);
+       
+        if(head ==null){
+            head= tail=newnode;
+            
+            
+        }
+           else{
+               newnode.next= head;
+               head= newnode;
+           }
+               
+    }
+    void addatpos(int data, int pos){
+    if(pos<=0 || pos>size+1){
+        System.out.println("please enter a vaild pos");
+        return;
+    }
+    
+    if (pos==1){
+        addatbeg(data);
+        return;
+    }
+    if (pos==size +1){
+        add(data);
+        return;
+    }
+    Node newnode = new Node(data);
+    size ++;
+    if (head ==null){
+        head=tail=newnode;
+    }
+    
+    else{
+        Node temp=head;
+        for (int i=1;i< pos-1;i++ ) {
+            temp=temp.next;
+        }
+    newnode.next=temp.next;
+    temp.next=newnode;
+}
+}
+    
+     void display(){
+         Node temp= head;
+         while(temp != null ){
+             System.out.print(temp.data+" ");
+             temp= temp.next;
+             
+         }
+         
+         System.out.println();
+     }
+}
+  
+ class Main{
+    public static void main (String[]args){
+        singlylist s= new singlylist ();
+        s.add(100);
+         s.add(200);
+          s.add(300);
+        s.display();
+        s. addatbeg(400);
+        s.display();
+        s.addatpos(1050,3);
+        s.display();
+    }
+ }
+     
 
 
 
