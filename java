@@ -912,7 +912,22 @@ STACK :
 
 	
 
-LAST IN FIRST OUT
+LAST IN FIRST OUT 
+
+	////////////////////////////// STACK USING LINKED LIST AND ARRAY ////////////////////
+
+	https://www.onlinegdb.com/1ApbTQIE9K
+
+
+
+
+
+///////////////////////////////// QUEUE USING LINKED LIST/////////////
+https://www.onlinegdb.com/YLcfy25F4
+	
+	
+
+	https://onlinegdb.coom/1APbTQIE9K
 	
 	
 
