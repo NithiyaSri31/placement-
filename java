@@ -874,10 +874,45 @@ public class Main {
 
 https:// onlinegdb.com/Ntju9Nt5p\\\\\\\\\\\\\\\\\\\\\ over all deletion
 https:// onlinegdb.com/Ntju9Nt5p
-	 
+
+
+\\\\\\\ singly linked list:
+https://onlinegdb.com/vZGIerloL \\\add
+https://onlinegdb.com/KASK-Htlm \\\del
+https://onlinegdb.com/6BnIFbxBB\\\del at beg      
+https://onlinegdb.com/Ntju9Nt5p  \\\\overall delete pos
+
+\\\\\ doubly linked list:
+https://onlinegdb.com/oh2hFDTjH \\\ dele portion
+https://onlinegdb.com/GvZOLio3f \\\\del at pos
+
+\\\\\\circularlinkedlist singly
+https://onlinegdb.com/s21s_-wL3 \\\
+https://onlinegdb.com/o5Je5eSq- \\\csll add at beg
 
 
 
+
+	 //////////////////////////    CIRCULAR DOUBLE LINKED LIST //////////////////////
+
+
+///////////REVERSE AT BEGIN
+https://onlinegdb.com/QGD9FqeOP
+
+
+
+STACK :
+ stack is an opertion that show how to insert the nde
+	OPERATIONS
+	1.push
+	2.pop
+	3.peek
+	4.isEmpty
+	5.isFull
+
+	
+
+LAST IN FIRST OUT
 	
 	
 
